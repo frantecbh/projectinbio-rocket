@@ -1,12 +1,12 @@
 import { cn } from "@/app/lib/utils";
-export default function Button({
+export const Button = ({
   children,
   variant = "primary",
   ...props
 }: {
   children: React.ReactNode;
   variant?: "primary" | "secondary" | "ghost";
-} & React.ButtonHTMLAttributes<HTMLButtonElement>) {
+} & React.ButtonHTMLAttributes<HTMLButtonElement>) => {
   return (
     <button
       {...props}
